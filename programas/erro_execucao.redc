@@ -1,0 +1,5 @@
+# erro de execução: divisão por zero que só aparece rodando
+seja total :: inteiro = 10;
+seja pessoas :: inteiro = 0;
+mostre("antes da divisão");
+mostre(total / pessoas);

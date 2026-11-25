@@ -1,0 +1,28 @@
+#v Testing
+
+funcao media(notas :: [real]) :: real {
+    seja soma :: real = 0.0;
+    para cada n em notas {
+        soma = soma + n;
+    }
+    retorne soma / tamanho(notas);
+}
+
+seja nome :: texto = "Ana";
+seja notas :: [real] = [7.5, 8.0];
+adicione(notas, 9.5);
+
+seja m :: real = media(notas);
+mostre(nome + " tem media " + texto(m));
+
+se (m >= 7.0) {
+    mostre("aprovada");
+} senao {
+    mostre("reprovada");
+}
+
+seja i :: inteiro = 3;
+enquanto (i > 0) {
+    mostre("contagem: " + texto(i));
+    i = i - 1;
+}

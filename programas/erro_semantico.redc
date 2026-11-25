@@ -1,0 +1,3 @@
+# erro semântico: variável usada sem ter sido declarada
+seja total :: inteiro = 10;
+mostre(totl + 1);

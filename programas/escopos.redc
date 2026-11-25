@@ -1,0 +1,17 @@
+# escopos: global, função e blocos aninhados
+funcao dobro(x :: inteiro) :: inteiro {
+    seja resultado :: inteiro = x * 2;
+    retorne resultado;
+}
+
+seja limite :: inteiro = 3;
+seja i :: inteiro = 0;
+enquanto (i < limite) {
+    seja quadrado :: inteiro = i * i;
+    se (quadrado > 1) {
+        seja limite :: texto = "sombreia o limite global";
+        mostre(limite);
+    }
+    i = i + 1;
+}
+mostre(dobro(limite));

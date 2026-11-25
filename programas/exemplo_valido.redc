@@ -1,0 +1,24 @@
+# situação de um aluno, com funções e recursão
+funcao media(a :: real, b :: real) :: real {
+    retorne (a + b) / 2.0;
+}
+
+funcao fatorial(n :: inteiro) :: inteiro {
+    se (n <= 1) {
+        retorne 1;
+    }
+    retorne n * fatorial(n - 1);
+}
+
+seja m :: real = media(7.5, 9.0);
+mostre(m);
+
+se (m >= 7.0) {
+    mostre("aprovado");
+} senao se (m >= 5.0) {
+    mostre("recuperação");
+} senao {
+    mostre("reprovado");
+}
+
+mostre(fatorial(5));

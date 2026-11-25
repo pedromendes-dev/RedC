@@ -1,0 +1,3 @@
+# erro semântico de tipo: texto guardado em variável inteiro
+seja idade :: inteiro = "35";
+mostre(idade);

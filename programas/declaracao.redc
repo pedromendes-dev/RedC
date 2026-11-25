@@ -1,0 +1,7 @@
+# declaração e atribuição
+seja idade :: inteiro = 35;
+seja nome :: texto = "Ana";
+seja altura :: real = 1.68;
+seja ativo :: logico = verdadeiro;
+idade = idade + 1;
+mostre(nome);

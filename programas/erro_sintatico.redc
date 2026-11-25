@@ -1,0 +1,3 @@
+# erro sintático: falta ';' no fim da declaração
+seja n :: inteiro = 5
+mostre(n);

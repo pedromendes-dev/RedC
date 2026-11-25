@@ -1,0 +1,2 @@
+# erro semântico: o array tem 3 posições e o valor tem 2 elementos
+seja v :: [inteiro; 3] = [1, 2];

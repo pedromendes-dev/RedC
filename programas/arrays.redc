@@ -1,0 +1,16 @@
+# array (tamanho fixo) e matriz
+seja v :: [inteiro; 3] = [10, 20, 30];
+v[1] = v[0] + v[2];
+mostre(v);
+
+# matriz 2x3: array de arrays
+seja m :: [[inteiro; 3]; 2] = [[1, 2, 3], [4, 5, 6]];
+seja soma :: inteiro = 0;
+para cada linha em m {
+    para cada x em linha {
+        soma = soma + x;
+    }
+}
+mostre(m);
+mostre(soma);
+mostre(m[1][2]);

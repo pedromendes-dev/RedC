@@ -1,0 +1,7 @@
+# conversão explícita para texto com texto(valor)
+seja nome :: texto = "Ana";
+seja nota :: real = 8.5;
+seja faltas :: inteiro = 3;
+seja aprovado :: logico = nota >= 7.0 e faltas < 10;
+mostre(nome + " tirou " + texto(nota) + " com " + texto(faltas) + " faltas");
+mostre("aprovado: " + texto(aprovado));

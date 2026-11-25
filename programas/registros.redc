@@ -1,0 +1,25 @@
+# registro: um tipo criado pelo programador
+registro Aluno {
+    nome :: texto;
+    notas :: [real];
+}
+
+funcao media(a :: Aluno) :: real {
+    seja soma :: real = 0.0;
+    para cada n em a.notas {
+        soma = soma + n;
+    }
+    retorne soma / tamanho(a.notas);
+}
+
+seja ana :: Aluno = Aluno("Ana", [8.0, 9.5]);
+adicione(ana.notas, 10);
+mostre(ana);
+mostre(ana.nome);
+mostre(media(ana));
+
+seja turma :: [Aluno] = [ana, Aluno("Bia", [6.0])];
+turma[1].nome = "Beatriz";
+para cada aluno em turma {
+    mostre(aluno.nome);
+}

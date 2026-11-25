@@ -1,0 +1,3 @@
+# erro léxico: '@' não pertence à RedC
+seja total :: inteiro = 10;
+seja taxa :: inteiro = total @ 2;

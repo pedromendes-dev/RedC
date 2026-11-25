@@ -1,0 +1,9 @@
+# operações aritméticas
+seja a :: inteiro = 10;
+seja b :: inteiro = 3;
+mostre(a + b);
+mostre(a - b);
+mostre(a * b);
+mostre(a / b);
+mostre(a % b);
+mostre((a + b) * 2);

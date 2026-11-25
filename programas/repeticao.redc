@@ -1,0 +1,8 @@
+# fatorial com enquanto
+seja n :: inteiro = 5;
+seja fat :: inteiro = 1;
+enquanto (n > 1) {
+    fat = fat * n;
+    n = n - 1;
+}
+mostre(fat);

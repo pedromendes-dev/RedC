@@ -1,0 +1,9 @@
+# condição com se / senao se / senao
+seja nota :: real = 8.5;
+se (nota >= 7.0 e nota <= 10.0) {
+    mostre("aprovado");
+} senao se (nota >= 5.0) {
+    mostre("recuperação");
+} senao {
+    mostre("reprovado");
+}

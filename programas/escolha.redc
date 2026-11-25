@@ -1,0 +1,19 @@
+# escolha / caso / padrao: o switch da RedC, sem fallthrough
+funcao nome_do_dia(dia :: inteiro) :: texto {
+    escolha (dia) {
+        caso 1, 7 { retorne "fim de semana"; }
+        caso 2 { retorne "segunda"; }
+        caso 6 { retorne "sexta"; }
+        padrao { retorne "meio da semana"; }
+    }
+}
+
+mostre(nome_do_dia(1));
+mostre(nome_do_dia(2));
+mostre(nome_do_dia(4));
+
+seja comando :: texto = "parar";
+escolha (comando) {
+    caso "andar" { mostre("andando"); }
+    caso "parar" { mostre("parado"); }
+}

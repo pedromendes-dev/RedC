@@ -1,0 +1,25 @@
+# lista (tamanho variável), para cada e funções nativas
+funcao media(notas :: [real]) :: real {
+    seja soma :: real = 0.0;
+    para cada nota em notas {
+        soma = soma + nota;
+    }
+    retorne soma / tamanho(notas);
+}
+
+seja turma :: [real] = [7.5, 8.0, 5.5];
+adicione(turma, 9);
+mostre(turma);
+mostre(tamanho(turma));
+mostre(media(turma));
+
+seja aprovados :: [texto] = [];
+seja nomes :: [texto] = ["Ana", "Bia", "Caio", "Davi"];
+seja i :: inteiro = 0;
+para cada nome em nomes {
+    se (turma[i] >= 7.0) {
+        adicione(aprovados, nome);
+    }
+    i = i + 1;
+}
+mostre(aprovados);
