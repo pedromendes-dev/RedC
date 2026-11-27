@@ -46,6 +46,10 @@ CASOS = (
     Caso("registros.redc", "Válido: registros", None,
          ('Aluno(nome: "Ana", notas: [8.0, 9.5, 10.0])', "Ana", "9.166666666666666",
           "Ana", "Beatriz")),
+    Caso("meu_programa.redc",
+         "Válido: programa completo com função, lista, condição e repetição", None,
+         ("Ana tem media 8.333333333333334", "aprovada",
+          "contagem: 3", "contagem: 2", "contagem: 1")),
 
     # ---------- programas com erro ----------
     Caso("exemplo_invalido.redc", "Erro léxico: caractere inválido",

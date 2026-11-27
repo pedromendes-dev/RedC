@@ -1,13 +1,13 @@
 # RedC — Resultados da execução do compilador
 
-Gerado em 15/11/2026 20:15 com Python 3.13.18 (Linux), pelo comando `python gerar_resultados.py`.
+Gerado em 27/11/2026 19:34 com Python 3.12.14 (Windows), pelo comando `python gerar_resultados.py`.
 
 ## Resumo
 
 | Verificação | Resultado |
 | --- | --- |
 | Testes automatizados (`python -m unittest discover -s testes`) | 213 de 213 passando |
-| Programas de teste com a saída esperada | 20 de 20 |
+| Programas de teste com a saída esperada | 21 de 21 |
 
 ## Programas de teste
 
@@ -24,6 +24,7 @@ Gerado em 15/11/2026 20:15 com Python 3.13.18 (Linux), pelo comando `python gera
 | `arrays.redc` | Válido: arrays e matriz | — | OK |
 | `conversao.redc` | Válido: conversão explícita com texto() | — | OK |
 | `registros.redc` | Válido: registros | — | OK |
+| `meu_programa.redc` | Válido: programa completo com função, lista, condição e repetição | — | OK |
 | `exemplo_invalido.redc` | Erro léxico: caractere inválido | exemplo com erro léxico | OK |
 | `erro_lexico_dois_pontos.redc` | Erro léxico: ':' sozinho | — | OK |
 | `erro_lexico_texto.redc` | Erro léxico: texto sem fechamento | — | OK |
@@ -341,6 +342,49 @@ Ana
 9.166666666666666
 Ana
 Beatriz
+```
+
+### meu_programa.redc — Válido: programa completo com função, lista, condição e repetição
+
+```
+#v Testing
+
+funcao media(notas :: [real]) :: real {
+    seja soma :: real = 0.0;
+    para cada n em notas {
+        soma = soma + n;
+    }
+    retorne soma / tamanho(notas);
+}
+
+seja nome :: texto = "Ana";
+seja notas :: [real] = [7.5, 8.0];
+adicione(notas, 9.5);
+
+seja m :: real = media(notas);
+mostre(nome + " tem media " + texto(m));
+
+se (m >= 7.0) {
+    mostre("aprovada");
+} senao {
+    mostre("reprovada");
+}
+
+seja i :: inteiro = 3;
+enquanto (i > 0) {
+    mostre("contagem: " + texto(i));
+    i = i - 1;
+}
+```
+
+`python compiler.py programas/meu_programa.redc`
+
+```
+Ana tem media 8.333333333333334
+aprovada
+contagem: 3
+contagem: 2
+contagem: 1
 ```
 
 ### exemplo_invalido.redc — Erro léxico: caractere inválido
